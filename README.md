@@ -1,12 +1,12 @@
 # Buff_Over_flo
 
-    //****buffer overflow steps -- use immunity debugger
+    //****buffer overflow steps -- use immunity debugger-open the file, sitting betwin file and attack host, view the ram space of the file running
     //1. code to test how long a input strings will make the app crashed. in 100 byte level
     //2. exactly the longth to EIP (4 bytes), the offset
     //3. check how long strings the ESP can accept, we need almost 400-500 bytes.
     //4. send the paylaod, offset + EIP(the address of ESP) + PAD ("\x90"*16) + shellcode(write to ESP)
 
-//code for setp1
+    //code for setp1
     buffer =["A"]
     counter = 100
 
