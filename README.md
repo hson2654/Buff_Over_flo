@@ -39,6 +39,7 @@
         //use same code as step2
         // send the bad char strings to test badchar which is not accept by the target software, ohter than \x00
         //the payload is "\x01 -- \xff"
+            !mona bytearray -b "\x00"  //used to generate badchar string
     //step4
         buffer = "A"*offset + (the address of ESP) + PAD + shellcode
         //for ESP, we need to map the opcode(operation code) of JMP ESP, that is \xff\xe4.
